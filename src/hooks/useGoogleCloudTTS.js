@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 
-const API_KEY = "AIzaSyC0v6QdHcNAD2bBp7IE1OdZwdD4jeePXQE";
+const API_KEY = process.env.REACT_APP_GCLOUD_TTS_API_KEY;
 const VOICES_ENDPOINT = `https://texttospeech.googleapis.com/v1/voices?key=${API_KEY}`;
 const SYNTH_ENDPOINT = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${API_KEY}`;
 
